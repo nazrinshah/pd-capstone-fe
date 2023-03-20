@@ -31,7 +31,14 @@ struct ContentView: View {
                 OrderRow()
             }
             Divider()
-            Swimlane()
+            
+            VStack(alignment: .leading) {
+                Text("Bubble Tea? Bubble Tea...")
+                    .font(.title2)
+                Text("(Beta) Complete your meal, no additional delivery charge")
+                    .font(.subheadline)
+                Swimlane()
+            }
         }
 
     }
