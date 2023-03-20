@@ -8,26 +8,26 @@
 import SwiftUI
 
 struct OrderRow: View {
-    //var orderItem: OrderItem
+    var orderItem: OrderItem
     
     var body: some View {
         HStack {
             Text("Qty: 1")
-            Image("fp-food-kfc-2pcs")
+            orderItem.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
                 .padding()
             VStack(alignment: .leading) {
-                Text("2 pcs Chicken Meal")
+                Text(orderItem.name)
                     .font(.headline)
-                Text("2 pcs Chicken, 3 pcs nugget")
+                Text(orderItem.description)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
             .frame(maxWidth: 300)
             Spacer()
-            Text("$12.60")
+            Text("$\(orderItem.price, specifier: "%.2f")")
         }
         .frame(maxWidth: .infinity, maxHeight: 80)
         .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
@@ -36,6 +36,6 @@ struct OrderRow: View {
 
 struct OrderRow_Previews: PreviewProvider {
     static var previews: some View {
-        OrderRow()
+        OrderRow(orderItem: order[0])
     }
 }

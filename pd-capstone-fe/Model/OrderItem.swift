@@ -12,5 +12,11 @@ struct OrderItem: Hashable, Codable {
     var name: String
     var price: Double
     var quantity: Int
-    var imageName: String
+    var description: String
+    
+    private var imageName: String
+    
+    var image: Image {
+        Image(imageName)
+    }
 }

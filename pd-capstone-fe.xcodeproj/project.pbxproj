@@ -17,6 +17,8 @@
 		0CF681B029C82E2C00A51EEB /* Extrensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681AF29C82E2C00A51EEB /* Extrensions.swift */; };
 		0CF681B629C8C06B00A51EEB /* Swimlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681B529C8C06B00A51EEB /* Swimlane.swift */; };
 		0CF681B829C8C49A00A51EEB /* SwimlaneColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681B729C8C49A00A51EEB /* SwimlaneColumn.swift */; };
+		0CF681BA29C918C600A51EEB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681B929C918C600A51EEB /* ModelData.swift */; };
+		0CF681BC29C91B0A00A51EEB /* orderData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF681BB29C91B0A00A51EEB /* orderData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		0CF681AF29C82E2C00A51EEB /* Extrensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extrensions.swift; sourceTree = "<group>"; };
 		0CF681B529C8C06B00A51EEB /* Swimlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swimlane.swift; sourceTree = "<group>"; };
 		0CF681B729C8C49A00A51EEB /* SwimlaneColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimlaneColumn.swift; sourceTree = "<group>"; };
+		0CF681B929C918C600A51EEB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		0CF681BB29C91B0A00A51EEB /* orderData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = orderData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		0CF6819829C8046600A51EEB /* pd-capstone-fe */ = {
 			isa = PBXGroup;
 			children = (
+				0CF681BD29C91B1400A51EEB /* Resources */,
 				0CF6819929C8046600A51EEB /* pd_capstone_feApp.swift */,
 				0CF681AC29C808C500A51EEB /* Model */,
 				0CF681A929C807FD00A51EEB /* Views */,
@@ -97,8 +102,17 @@
 			children = (
 				0CF681AA29C808BE00A51EEB /* OrderItem.swift */,
 				0CF681AF29C82E2C00A51EEB /* Extrensions.swift */,
+				0CF681B929C918C600A51EEB /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0CF681BD29C91B1400A51EEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CF681BB29C91B0A00A51EEB /* orderData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,7 @@
 			files = (
 				0CF681A129C8046700A51EEB /* Preview Assets.xcassets in Resources */,
 				0CF6819E29C8046700A51EEB /* Assets.xcassets in Resources */,
+				0CF681BC29C91B0A00A51EEB /* orderData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +188,7 @@
 			files = (
 				0CF681AB29C808BE00A51EEB /* OrderItem.swift in Sources */,
 				0CF6819C29C8046600A51EEB /* ContentView.swift in Sources */,
+				0CF681BA29C918C600A51EEB /* ModelData.swift in Sources */,
 				0CF681B629C8C06B00A51EEB /* Swimlane.swift in Sources */,
 				0CF681AE29C816BF00A51EEB /* OrderRow.swift in Sources */,
 				0CF6819A29C8046600A51EEB /* pd_capstone_feApp.swift in Sources */,
