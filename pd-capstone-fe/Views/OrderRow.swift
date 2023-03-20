@@ -13,12 +13,11 @@ struct OrderRow: View {
     var body: some View {
         HStack {
             Text("Qty: 1")
-            Spacer()
             Image("fp-food-kfc-2pcs")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
-            Spacer()
+                .padding()
             VStack(alignment: .leading) {
                 Text("2 pcs Chicken Meal")
                     .font(.headline)
@@ -26,12 +25,11 @@ struct OrderRow: View {
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-            .frame(maxWidth: 200)
+            .frame(maxWidth: 300)
             Spacer()
             Text("$12.60")
         }
-        .padding()
-        .frame(maxHeight: 80)
+        .frame(maxWidth: .infinity, maxHeight: 80)
     }
 }
 

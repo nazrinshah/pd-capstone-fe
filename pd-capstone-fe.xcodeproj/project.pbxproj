@@ -15,6 +15,8 @@
 		0CF681AB29C808BE00A51EEB /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681AA29C808BE00A51EEB /* OrderItem.swift */; };
 		0CF681AE29C816BF00A51EEB /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681AD29C816BF00A51EEB /* OrderRow.swift */; };
 		0CF681B029C82E2C00A51EEB /* Extrensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681AF29C82E2C00A51EEB /* Extrensions.swift */; };
+		0CF681B629C8C06B00A51EEB /* Swimlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681B529C8C06B00A51EEB /* Swimlane.swift */; };
+		0CF681B829C8C49A00A51EEB /* SwimlaneColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF681B729C8C49A00A51EEB /* SwimlaneColumn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		0CF681AA29C808BE00A51EEB /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		0CF681AD29C816BF00A51EEB /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		0CF681AF29C82E2C00A51EEB /* Extrensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extrensions.swift; sourceTree = "<group>"; };
+		0CF681B529C8C06B00A51EEB /* Swimlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swimlane.swift; sourceTree = "<group>"; };
+		0CF681B729C8C49A00A51EEB /* SwimlaneColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimlaneColumn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				0CF6819B29C8046600A51EEB /* ContentView.swift */,
 				0CF681A729C807E700A51EEB /* OrderList.swift */,
 				0CF681AD29C816BF00A51EEB /* OrderRow.swift */,
+				0CF681B529C8C06B00A51EEB /* Swimlane.swift */,
+				0CF681B729C8C49A00A51EEB /* SwimlaneColumn.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,8 +173,10 @@
 			files = (
 				0CF681AB29C808BE00A51EEB /* OrderItem.swift in Sources */,
 				0CF6819C29C8046600A51EEB /* ContentView.swift in Sources */,
+				0CF681B629C8C06B00A51EEB /* Swimlane.swift in Sources */,
 				0CF681AE29C816BF00A51EEB /* OrderRow.swift in Sources */,
 				0CF6819A29C8046600A51EEB /* pd_capstone_feApp.swift in Sources */,
+				0CF681B829C8C49A00A51EEB /* SwimlaneColumn.swift in Sources */,
 				0CF681B029C82E2C00A51EEB /* Extrensions.swift in Sources */,
 				0CF681A829C807E700A51EEB /* OrderList.swift in Sources */,
 			);

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
                 TextField("Search", text: .constant(""))
                     .padding(8)
@@ -24,11 +24,16 @@ struct ContentView: View {
                 }
             }
             .padding()
-            OrderList()
             
-            // TODO: add footer stuff
+            ForEach(1...3, id: \.self) { _ in
+                // insert navigation? no
+                
+                OrderRow()
+            }
+            Divider()
+            Swimlane()
         }
-        .padding()
+
     }
 }
 

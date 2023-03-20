@@ -18,6 +18,8 @@ struct OrderList: View {
                 OrderRow()
             }
         }
+        .edgesIgnoringSafeArea(.all)
+        .listStyle(PlainListStyle())
     }
 }
 
