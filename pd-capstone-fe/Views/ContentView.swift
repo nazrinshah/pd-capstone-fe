@@ -25,6 +25,8 @@ struct ContentView: View {
             }
             .padding()
             OrderList()
+            
+            // TODO: add footer stuff
         }
         .padding()
     }

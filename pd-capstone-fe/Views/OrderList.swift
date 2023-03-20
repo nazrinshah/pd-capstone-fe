@@ -10,6 +10,7 @@ import SwiftUI
 struct OrderList: View {
     var body: some View {
         List{
+            // TODO: use dynamic data
             ForEach(1...3, id: \.self) { _ in
                 // insert navigation? no
                 
