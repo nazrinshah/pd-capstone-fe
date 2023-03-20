@@ -30,6 +30,7 @@ struct OrderRow: View {
             Text("$12.60")
         }
         .frame(maxWidth: .infinity, maxHeight: 80)
+        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
     }
 }
 
