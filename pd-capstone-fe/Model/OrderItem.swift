@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct OrderItem: Hashable, Codable, Identifiable {
-    var id: Int
-    
+struct OrderItem: Hashable, Codable {
+    var name: String
+    var price: Double
+    var quantity: Int
+    var imageName: String
 }

@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct OrderRow: View {
+    //var orderItem: OrderItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Qty: 1")
+            Spacer()
+            Image("fp-food-kfc-2pcs")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(8)
+            Spacer()
+            VStack(alignment: .leading) {
+                Text("2 pcs Chicken Meal")
+                    .font(.headline)
+                Text("2 pcs Chicken, 3 pcs nugget")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            .frame(maxWidth: 200)
+            Spacer()
+            Text("$12.60")
+        }
+        .padding()
+        .frame(maxHeight: 80)
     }
 }
 

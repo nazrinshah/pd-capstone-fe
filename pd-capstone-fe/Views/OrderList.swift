@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OrderList: View {
+   // var order: [OrderItem]
     var body: some View {
         List{
             // TODO: use dynamic data
