@@ -8,6 +8,7 @@
 import Foundation
 
 var order: [OrderItem] = load("orderData.json")
+var drinks: [SwimlaneItem] = load("drinksData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

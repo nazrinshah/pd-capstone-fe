@@ -27,7 +27,6 @@ struct ContentView: View {
             
             ForEach(order, id: \.self) { item in
                 // insert navigation? no
-                
                 OrderRow(orderItem: item)
             }
             Divider()
@@ -37,7 +36,7 @@ struct ContentView: View {
                     .font(.title2)
                 Text("(Beta) Complete your meal, no additional delivery charge")
                     .font(.subheadline)
-                Swimlane()
+                    Swimlane()
             }
         }
 

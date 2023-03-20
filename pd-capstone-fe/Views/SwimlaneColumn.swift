@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct SwimlaneColumn: View {
+    var drink: SwimlaneItem
+    
     var body: some View {
         VStack {
-            Image("fp-drink-gong-cha-pearl-milk-tea")
+            drink.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
                 .frame(maxHeight: 200)
             HStack {
                 VStack(alignment: .leading) {
-                    Text("$5.30")
+                    Text("$\(drink.price, specifier: "%.2f")")
                         .font(.headline)
-                    Text("Pearl Milk tea")
+                    Text("\(drink.name)")
                         .font(.subheadline)
                 }
                 Spacer()
+                // TODO: change to button (add action)
                 Image(systemName: "plus")
                     .resizable()
                     .foregroundColor(.white)
@@ -41,6 +44,6 @@ struct SwimlaneColumn: View {
 
 struct SwimlaneColumn_Previews: PreviewProvider {
     static var previews: some View {
-        SwimlaneColumn()
+        SwimlaneColumn(drink: drinks[1])
     }
 }

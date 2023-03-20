@@ -11,10 +11,9 @@ struct Swimlane: View {
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
-                ForEach(1...3, id: \.self) { _ in
+                ForEach(drinks, id: \.self) { drink in
                     // insert navigation? no
-                    
-                    SwimlaneColumn()
+                    SwimlaneColumn(drink: drink)
                 }
             }
         }
