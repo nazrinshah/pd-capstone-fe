@@ -10,25 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
-            HStack {
-                TextField("Search", text: .constant(""))
-                    .padding(8)
-                    .background(Color(.systemGray5))
-                    .cornerRadius(8)
-                Button(action: {}) {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.white)
-                        .padding(8)
-                        .background(Color.blue) // TODO: fix color
-                        .cornerRadius(8)
-                }
-            }
-            .padding()
+            Header()
             
-            ForEach(order, id: \.self) { item in
-                // insert navigation? no
-                OrderRow(orderItem: item)
-            }
+            OrderList()
             Divider()
             
             VStack(alignment: .leading) {
@@ -36,8 +20,8 @@ struct ContentView: View {
                     .font(.title2)
                 Text("(Beta) Complete your meal, no additional delivery charge")
                     .font(.subheadline)
-                    Swimlane()
             }
+            Swimlane()
         }
 
     }

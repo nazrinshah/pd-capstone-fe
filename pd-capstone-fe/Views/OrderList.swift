@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct OrderList: View {
-   // var order: [OrderItem]
     var body: some View {
-        List{
-            // TODO: use dynamic data
+        //ScrollView {
             ForEach(order, id: \.self) { item in
                 // insert navigation? no
-                
                 OrderRow(orderItem: item)
             }
-        }
-        .edgesIgnoringSafeArea(.all)
-        .listStyle(PlainListStyle())
+       // }
     }
 }
 
