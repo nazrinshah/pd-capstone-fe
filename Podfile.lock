@@ -1,0 +1,20 @@
+PODS:
+  - RadioGroup (1.4.4):
+    - SweeterSwift
+  - SweeterSwift (1.2.1)
+
+DEPENDENCIES:
+  - RadioGroup
+
+SPEC REPOS:
+  trunk:
+    - RadioGroup
+    - SweeterSwift
+
+SPEC CHECKSUMS:
+  RadioGroup: 8541fae4af7ee54125a9e237105982c1fbeedaa7
+  SweeterSwift: 61baeda1c0c27d1dc57c8112c3d6a82e5aff3139
+
+PODFILE CHECKSUM: 470a848aadb1df2f6a9427c18de1e41eae990a07
+
+COCOAPODS: 1.12.0
