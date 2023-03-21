@@ -32,7 +32,7 @@ struct OrderRow: View {
             Text("$\(orderItem.price*Float64(orderItem.quantity), specifier: "%.2f")")
         }
         .frame(maxWidth: .infinity, maxHeight: 80)
-        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+        .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
     }
 }
 
