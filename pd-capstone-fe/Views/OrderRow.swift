@@ -12,20 +12,22 @@ struct OrderRow: View {
     
     var body: some View {
         HStack {
-            Text("Qty: 1")
+            Text("Qty: \(orderItem.quantity)")
             orderItem.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
                 .padding()
+                .frame(maxWidth: 300)
             VStack(alignment: .leading) {
                 Text(orderItem.name)
                     .font(.headline)
+                    .lineLimit(1)
                 Text(orderItem.description)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .lineLimit(1)
             }
-            .frame(maxWidth: 300)
             Spacer()
             Text("$\(orderItem.price, specifier: "%.2f")")
         }

@@ -23,6 +23,7 @@ struct SwimlaneColumn: View {
                         .font(.headline)
                     Text("\(drink.name)")
                         .font(.subheadline)
+                        .lineLimit(1)
                 }
                 Spacer()
                 // TODO: change to button (add action)

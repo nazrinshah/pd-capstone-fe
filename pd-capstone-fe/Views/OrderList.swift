@@ -9,12 +9,11 @@ import SwiftUI
 
 struct OrderList: View {
     var body: some View {
-        //ScrollView {
+        ScrollView {
             ForEach(order, id: \.self) { item in
-                // insert navigation? no
                 OrderRow(orderItem: item)
             }
-       // }
+        }
     }
 }
 
