@@ -14,13 +14,7 @@ struct ContentView: View {
             
             OrderList()
             Divider()
-            
-            VStack(alignment: .leading) {
-                Text("Bubble Tea? Bubble Tea...")
-                    .font(.title2)
-                Text("(Beta) Complete your meal, no additional delivery charge")
-                    .font(.subheadline)
-            }
+            Banner()
             Swimlane()
         }
 
