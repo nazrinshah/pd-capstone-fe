@@ -16,23 +16,32 @@ struct AddToCart: View {
         let sugarLevels: [String] = ["Normal", "More Sweet", "Less Sweet"]
         let iceLevels: [String] = ["Normal", "More Ice", "Less Ice", "No Ice"]
         
-        VStack(alignment: .leading) {
-            VStack {
-                Text("Sugar Level")
-                    .font(.headline)
+        ScrollView {
+            Image("fp-drink-gong-cha-pearl-milk-tea")
+                .resizable()
+                .scaledToFit()
+            VStack(alignment: .leading) {
+                VStack {
+                    Text("Sugar Level")
+                        .font(.headline)
+                    
+                    RadioGroupPicker(selectedIndex: $sugarLevel, titles: sugarLevels, itemSpacing: UIScreen.main.bounds.size.width-130, isButtonAfterTitle: true)
+                        .fixedSize()
+                }
                 
-                RadioGroupPicker(selectedIndex: $sugarLevel, titles: sugarLevels, itemSpacing: UIScreen.main.bounds.size.width-130, isButtonAfterTitle: true)
-                    .fixedSize()
+                Divider()
+        
+                VStack {
+                    Text("Ice Level")
+                        .font(.headline)
+                    
+                    RadioGroupPicker(selectedIndex: $iceLevel, titles: iceLevels, itemSpacing: UIScreen.main.bounds.size.width-110, isButtonAfterTitle: true)
+                        .fixedSize()
+                }
             }
             
-            Divider()
-    
-            VStack {
-                Text("Ice Level")
-                    .font(.headline)
+            Button("Add to Cart") {
                 
-                RadioGroupPicker(selectedIndex: $iceLevel, titles: iceLevels, itemSpacing: UIScreen.main.bounds.size.width-110, isButtonAfterTitle: true)
-                    .fixedSize()
             }
         }
     }
