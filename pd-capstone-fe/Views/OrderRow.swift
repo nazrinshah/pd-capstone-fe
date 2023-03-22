@@ -12,13 +12,12 @@ struct OrderRow: View {
     
     var body: some View {
         HStack {
-            Text("Qty: \(orderItem.quantity)")
+            Text("x \(orderItem.quantity)")
             orderItem.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
-                .padding()
-                .frame(maxWidth: 300)
+                .padding(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5))
             VStack(alignment: .leading) {
                 Text(orderItem.name)
                     .font(.headline)

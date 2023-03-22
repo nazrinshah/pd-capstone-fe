@@ -121,6 +121,7 @@
 		0CF681A929C807FD00A51EEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CD04B0129CA869F007554E9 /* Helpers */,
 				0CF6819B29C8046600A51EEB /* ContentView.swift */,
 				0CD04B0229CA9EB0007554E9 /* Order.swift */,
 				0CF681A729C807E700A51EEB /* OrderList.swift */,
@@ -130,7 +131,6 @@
 				0C63082D29C9302B009404E8 /* Header.swift */,
 				0C63082F29C9311E009404E8 /* Banner.swift */,
 				0CD04AFB29C945F6007554E9 /* AddToCart.swift */,
-				0CD04B0129CA869F007554E9 /* Helpers */,
 				0CD04AFD29C94632007554E9 /* Checkout.swift */,
 			);
 			path = Views;
