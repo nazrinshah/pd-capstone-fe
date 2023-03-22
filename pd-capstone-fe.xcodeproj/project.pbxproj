@@ -11,6 +11,7 @@
 		0C63083029C9311E009404E8 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63082F29C9311E009404E8 /* Banner.swift */; };
 		0CD04AFC29C945F6007554E9 /* AddToCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD04AFB29C945F6007554E9 /* AddToCart.swift */; };
 		0CD04AFE29C94632007554E9 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD04AFD29C94632007554E9 /* Checkout.swift */; };
+		0CD04B0029CA8696007554E9 /* RadioGroupComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD04AFF29CA8696007554E9 /* RadioGroupComponent.swift */; };
 		0CF6819A29C8046600A51EEB /* pd_capstone_feApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF6819929C8046600A51EEB /* pd_capstone_feApp.swift */; };
 		0CF6819C29C8046600A51EEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF6819B29C8046600A51EEB /* ContentView.swift */; };
 		0CF6819E29C8046700A51EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF6819D29C8046700A51EEB /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		0C63082F29C9311E009404E8 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		0CD04AFB29C945F6007554E9 /* AddToCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCart.swift; sourceTree = "<group>"; };
 		0CD04AFD29C94632007554E9 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		0CD04AFF29CA8696007554E9 /* RadioGroupComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroupComponent.swift; sourceTree = "<group>"; };
 		0CF6819629C8046600A51EEB /* pd-capstone-fe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pd-capstone-fe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF6819929C8046600A51EEB /* pd_capstone_feApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pd_capstone_feApp.swift; sourceTree = "<group>"; };
 		0CF6819B29C8046600A51EEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD04B0129CA869F007554E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0CD04AFF29CA8696007554E9 /* RadioGroupComponent.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0CF6818D29C8046600A51EEB = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 				0C63082D29C9302B009404E8 /* Header.swift */,
 				0C63082F29C9311E009404E8 /* Banner.swift */,
 				0CD04AFB29C945F6007554E9 /* AddToCart.swift */,
+				0CD04B0129CA869F007554E9 /* Helpers */,
 				0CD04AFD29C94632007554E9 /* Checkout.swift */,
 			);
 			path = Views;
@@ -156,7 +167,6 @@
 				A098565F2511447C8BEA952A /* Pods-pd-capstone-fe.debug.xcconfig */,
 				80D7526B64D3B1103866F91D /* Pods-pd-capstone-fe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -283,6 +293,7 @@
 				0CF681B629C8C06B00A51EEB /* Swimlane.swift in Sources */,
 				0CF681BF29C9210300A51EEB /* SwimlaneItem.swift in Sources */,
 				0C63083029C9311E009404E8 /* Banner.swift in Sources */,
+				0CD04B0029CA8696007554E9 /* RadioGroupComponent.swift in Sources */,
 				0C63082E29C9302B009404E8 /* Header.swift in Sources */,
 				0CF681AE29C816BF00A51EEB /* OrderRow.swift in Sources */,
 				0CF6819A29C8046600A51EEB /* pd_capstone_feApp.swift in Sources */,

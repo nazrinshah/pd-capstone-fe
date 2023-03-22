@@ -9,11 +9,32 @@ import SwiftUI
 import RadioGroup
 
 struct AddToCart: View {
-    @State private var selection = 1
+    @State private var sugarLevel = 1
+    @State private var iceLevel = 1
     
     var body: some View {
-        RadioGroupPicker(selectedIndex: $selection, titles: ["One", "Two", "Three"])
-            .fixedSize()
+        let sugarLevels: [String] = ["Normal", "More Sweet", "Less Sweet"]
+        let iceLevels: [String] = ["Normal", "More Ice", "Less Ice", "No Ice"]
+        
+        VStack(alignment: .leading) {
+            VStack {
+                Text("Sugar Level")
+                    .font(.headline)
+                
+                RadioGroupPicker(selectedIndex: $sugarLevel, titles: sugarLevels, itemSpacing: UIScreen.main.bounds.size.width-130, isButtonAfterTitle: true)
+                    .fixedSize()
+            }
+            
+            Divider()
+    
+            VStack {
+                Text("Ice Level")
+                    .font(.headline)
+                
+                RadioGroupPicker(selectedIndex: $iceLevel, titles: iceLevels, itemSpacing: UIScreen.main.bounds.size.width-110, isButtonAfterTitle: true)
+                    .fixedSize()
+            }
+        }
     }
 }
 
