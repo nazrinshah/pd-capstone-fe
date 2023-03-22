@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Order: View {
     var body: some View {
-        NavigationView {
             ScrollView {
                 Header()
                 OrderList()
@@ -17,7 +16,6 @@ struct Order: View {
                 Banner()
                 Swimlane()
             }
-        }
     }
 }
 

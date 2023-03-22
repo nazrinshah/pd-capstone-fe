@@ -41,7 +41,6 @@ struct AddToCart: View {
             }
 
             Button("Add to Cart") {
-                
             }
         }
     }
