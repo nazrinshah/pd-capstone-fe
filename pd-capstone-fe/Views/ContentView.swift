@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            Header()
-            OrderList()
-            Divider()
-            Banner()
-            Swimlane()
-        }
+        Order()
 
     }
 }
