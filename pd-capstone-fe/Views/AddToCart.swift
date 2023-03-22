@@ -9,8 +9,8 @@ import SwiftUI
 import RadioGroup
 
 struct AddToCart: View {
-    @State private var sugarLevel = 1
-    @State private var iceLevel = 1
+    @State private var sugarLevel = 0
+    @State private var iceLevel = 0
     
     var body: some View {
         let sugarLevels: [String] = ["Normal", "More Sweet", "Less Sweet"]
@@ -39,7 +39,7 @@ struct AddToCart: View {
                         .fixedSize()
                 }
             }
-            
+
             Button("Add to Cart") {
                 
             }
