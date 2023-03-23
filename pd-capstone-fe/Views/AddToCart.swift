@@ -9,6 +9,8 @@ import SwiftUI
 import RadioGroup
 
 struct AddToCart: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var sugarLevel = 0
     @State private var iceLevel = 0
     
@@ -43,6 +45,7 @@ struct AddToCart: View {
             Button("Add to Cart") {
                 print(sugarLevels[sugarLevel])
                 print(iceLevels[iceLevel])
+                self.presentationMode.wrappedValue.dismiss()
             }
         }
     }
