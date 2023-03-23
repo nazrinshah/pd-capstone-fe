@@ -15,6 +15,8 @@ struct Order: View {
                 Divider()
                 Banner()
                 Swimlane()
+                Spacer()
+                Button("Make Payment"){}
             }
     }
 }

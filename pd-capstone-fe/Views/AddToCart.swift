@@ -41,6 +41,8 @@ struct AddToCart: View {
             }
 
             Button("Add to Cart") {
+                print(sugarLevels[sugarLevel])
+                print(iceLevels[iceLevel])
             }
         }
     }
