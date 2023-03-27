@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct Swimlane: View {
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
-                ForEach(drinks, id: \.self) { drink in
+                ForEach(modelData.drinks, id: \.self) { drink in
                     // insert navigation? no
                     SwimlaneColumn(drink: drink)
                 }
@@ -23,5 +25,6 @@ struct Swimlane: View {
 struct Swimlane_Previews: PreviewProvider {
     static var previews: some View {
         Swimlane()
+            .environmentObject(ModelData())
     }
 }

@@ -37,6 +37,6 @@ struct OrderRow: View {
 
 struct OrderRow_Previews: PreviewProvider {
     static var previews: some View {
-        OrderRow(orderItem: order[0])
+        OrderRow(orderItem: ModelData().order[0])
     }
 }

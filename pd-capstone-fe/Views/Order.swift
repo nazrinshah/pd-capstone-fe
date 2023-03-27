@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Order: View {
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
             ScrollView {
                 Header()
@@ -26,5 +28,6 @@ struct Order: View {
 struct Order_Previews: PreviewProvider {
     static var previews: some View {
         Order()
+            .environmentObject(ModelData())
     }
 }

@@ -10,6 +10,7 @@ import RadioGroup
 
 struct AddToCart: View {
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var modelData: ModelData
     
     @State private var sugarLevel = 0
     @State private var iceLevel = 0
@@ -45,6 +46,9 @@ struct AddToCart: View {
             Button("Add to Cart") {
                 print(sugarLevels[sugarLevel])
                 print(iceLevels[iceLevel])
+                
+                modelData.order.append(OrderItem.init())
+                print(modelData.order)
                 self.presentationMode.wrappedValue.dismiss()
             }
         }
@@ -54,5 +58,6 @@ struct AddToCart: View {
 struct AddToCart_Previews: PreviewProvider {
     static var previews: some View {
         AddToCart()
+            .environmentObject(ModelData())
     }
 }

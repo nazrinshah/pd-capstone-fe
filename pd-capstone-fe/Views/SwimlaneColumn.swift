@@ -46,6 +46,6 @@ struct SwimlaneColumn: View {
 
 struct SwimlaneColumn_Previews: PreviewProvider {
     static var previews: some View {
-        SwimlaneColumn(drink: drinks[1])
+        SwimlaneColumn(drink: ModelData().drinks[1])
     }
 }

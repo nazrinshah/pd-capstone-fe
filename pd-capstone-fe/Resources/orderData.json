@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "2 pcs Chicken Meal",
         "price": 12.60,
         "quantity": 1,
@@ -8,6 +9,7 @@
         "imageName": "fp-food-kfc-2pcs"
     },
     {
+        "id": 2,
         "name": "asfasf",
         "price": 12.60,
         "quantity": 3,
@@ -16,6 +18,7 @@
         "imageName": "fp-food-kfc-2pcs"
     },
     {
+        "id": 3,
         "name": "safasfggasfgasfsa",
         "price": 12.60,
         "quantity": 1,
