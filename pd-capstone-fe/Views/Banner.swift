@@ -14,6 +14,7 @@ struct Banner: View {
                 .font(.title2)
             Text("(Beta) Complete your meal, no additional delivery charge")
                 .font(.subheadline)
+            Swimlane()
         }
     }
 }
@@ -21,5 +22,6 @@ struct Banner: View {
 struct Banner_Previews: PreviewProvider {
     static var previews: some View {
         Banner()
+            .environmentObject(ModelData())
     }
 }

@@ -16,7 +16,6 @@ struct Order: View {
                 OrderList()
                 Divider()
                 Banner()
-                Swimlane()
                 Spacer()
                 NavigationLink(destination: Checkout()) {
                     Text("Make Payment")
