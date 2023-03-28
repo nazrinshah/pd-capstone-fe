@@ -17,6 +17,8 @@ struct Order: View {
                 Divider()
                 Banner()
                 Spacer()
+                Divider()
+                Footer()
                 NavigationLink(destination: Checkout()) {
                     Text("Make Payment")
                 }
