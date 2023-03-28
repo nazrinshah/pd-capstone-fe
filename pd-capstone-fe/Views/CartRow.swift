@@ -1,5 +1,5 @@
 //
-//  OrderRow.swift
+//  CartRow.swift
 //  pd-capstone-fe
 //
 //  Created by Nazrin Shah on 20/3/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OrderRow: View {
+struct CartRow: View {
     var orderItem: OrderItem
     
     var body: some View {
@@ -37,6 +37,6 @@ struct OrderRow: View {
 
 struct OrderRow_Previews: PreviewProvider {
     static var previews: some View {
-        OrderRow(orderItem: ModelData().order[0])
+        CartRow(orderItem: ModelData().order[0])
     }
 }

@@ -13,7 +13,7 @@ struct Order: View {
     var body: some View {
             ScrollView {
                 Header()
-                OrderList()
+                CartList()
                 Divider()
                 Banner()
                 Spacer()
