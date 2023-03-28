@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 struct OrderItem: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
-    var price: Double
-    var quantity: Int
-    var description: String
+    var id: Int?
+    var name: String? = ""
+    var price: Double?
+    var quantity: Int?
+    var remarks: String? = ""
     
     private var imageName: String
     
@@ -22,11 +22,9 @@ struct OrderItem: Hashable, Codable, Identifiable {
     }
     
     init() {
-        self.id = 10
-        self.name = "new object"
-        self.price = 12.0
         self.quantity = 1
-        self.description = "12313"
+        self.price = 0.0
         self.imageName = "fp-drink-gong-cha-pearl-milk-tea"
     }
 }
+
