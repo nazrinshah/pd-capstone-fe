@@ -12,24 +12,30 @@ struct Footer: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Subtotal")
-                Spacer()
-                
-                Text("$\(modelData.order.reduce(0.0, {$0 + $1.price * Float64($1.quantity)}), specifier: "%.2f")")
+            VStack {
+                HStack {
+                    Text("Subtotal")
+                    Spacer()
+                    
+                    Text("$\(modelData.order.reduce(0.0, {$0 + $1.price * Float64($1.quantity)}), specifier: "%.2f")")
+                }
+                HStack {
+                    Text("Platform fee")
+                    Spacer()
+                    Text("$0.40")
+                }
+                HStack {
+                    Text("Delivery fee")
+                    Spacer()
+                    Text("$3.00")
+                }
             }
-            HStack {
-                Text("Platform fee")
-                Spacer()
-                Text("$0.40")
+            .padding()
+            NavigationLink(destination: Checkout()) {
+                Text("Make Payment")
             }
-            HStack {
-                Text("Delivery fee")
-                Spacer()
-                Text("$3.00")
-            }
+
         }
-        .padding()
     }
 }
 
