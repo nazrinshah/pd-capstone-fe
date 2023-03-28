@@ -15,7 +15,10 @@ struct Footer: View {
             HStack {
                 Text("Subtotal")
                 Spacer()
-                Text("$12.60")
+                
+                var total = modelData.order.reduce(0.0, {$0 + $1.price * Float64($1.quantity)})
+                let _ = print(modelData.order)
+                Text("$\(total, specifier: "%.2f")")
             }
             HStack {
                 Text("Platform fee")
