@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Order: View {
+struct Cart: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
@@ -50,9 +50,9 @@ struct Order: View {
         }
     }
     
-    struct Order_Previews: PreviewProvider {
+    struct Cart_Previews: PreviewProvider {
         static var previews: some View {
-            Order()
+            Cart()
                 .environmentObject(ModelData())
         }
     }
