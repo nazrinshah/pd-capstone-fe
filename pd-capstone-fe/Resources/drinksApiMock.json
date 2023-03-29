@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "vendor_id": 2,
+        "name": "Pearl Milk Tea",
+        "status": 1,
+        "price": 5.3,
+        "description": "",
+        "currency": "SGD",
+        "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+    },
+    {
+        "id": 2,
+        "vendor_id": 2,
+        "name": "Earl Grey Milk Tea",
+        "status": 1,
+        "price": 7.3,
+        "description": "",
+        "currency": "SGD",
+        "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+    },
+    {
+        "id": 3,
+        "vendor_id": 2,
+        "name": "Mango Milk Tea",
+        "status": 1,
+        "price": 6.3,
+        "description": "",
+        "currency": "SGD",
+        "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+    }
+]

@@ -25,7 +25,7 @@ struct Swimlane: View {
                     drinks = try JSONDecoder().decode([Dish].self, from: data)
                 } catch {
                     let _ = print("cannot get drinks")
-                    drinks = []
+                    drinks = load("drinksApiMock.json")
                 }
             }
         }
