@@ -12,21 +12,21 @@
     {
         "id": 2,
         "vendor_id": 2,
-        "name": "Earl Grey Milk Tea",
+        "name": "Brown Sugar Milk Tea",
         "status": 1,
         "price": 7.3,
         "description": "Grey of Earl",
         "currency": "SGD",
-        "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+        "image_name": "fp-drink-gong-cha-brown-sugar-mlik-tea-with-pearl"
     },
     {
         "id": 3,
         "vendor_id": 2,
-        "name": "Mango Milk Tea",
+        "name": "Strawberry Milk Tea",
         "status": 1,
         "price": 6.3,
         "description": "Durian",
         "currency": "SGD",
-        "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+        "image_name": "fp-drink-gong-cha-strawberry-milk-tea"
     }
 ]
