@@ -18,7 +18,7 @@ struct Header: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.white)
                     .padding(8)
-                    .background(Color.pink) // TODO: fix color
+                    .background(Color.cerisered) // TODO: fix color
                     .cornerRadius(8)
             }
         }.padding()
