@@ -38,6 +38,6 @@ struct Dish: Hashable, Codable, Identifiable {
     }
     
     func toSwimlaneItem() -> SwimlaneItem {
-        return SwimlaneItem(id: self.id!, name: self.name!, price: self.price!, imageName: self.imageName)
+        return SwimlaneItem(id: self.id!, name: self.name!, price: self.price!, description: self.description!, imageName: self.imageName)
     }
 }

@@ -55,8 +55,8 @@ struct AddToCart: View {
                         let (data, _) = try await URLSession.shared.data(from: url)
                         dish = try JSONDecoder().decode(Dish.self, from: data)
                     } catch {
-                        let _ = print("http://localhost:8080/dish")
-                        dish = Dish()
+                        let _ = print("fallback to Dish mock")
+                        dish = load("dishMock.json")
                     }
                 }
                 Button("Add to Cart") {

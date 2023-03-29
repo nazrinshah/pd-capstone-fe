@@ -5,7 +5,7 @@
         "name": "Pearl Milk Tea",
         "status": 1,
         "price": 5.3,
-        "description": "",
+        "description": "Delicious boba with milk tea",
         "currency": "SGD",
         "image_name": "fp-drink-gong-cha-pearl-milk-tea"
     },
@@ -15,7 +15,7 @@
         "name": "Earl Grey Milk Tea",
         "status": 1,
         "price": 7.3,
-        "description": "",
+        "description": "Grey of Earl",
         "currency": "SGD",
         "image_name": "fp-drink-gong-cha-pearl-milk-tea"
     },
@@ -25,7 +25,7 @@
         "name": "Mango Milk Tea",
         "status": 1,
         "price": 6.3,
-        "description": "",
+        "description": "Durian",
         "currency": "SGD",
         "image_name": "fp-drink-gong-cha-pearl-milk-tea"
     }
