@@ -22,6 +22,15 @@ struct Order: View {
                     Divider()
                     Footer()
                 }
+                NavigationLink(destination: Checkout()) {
+                    Text("Make Payment")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 340)
+                        .background(Color.cerisered)
+                        .cornerRadius(8)
+                }
             }
         }
     }
