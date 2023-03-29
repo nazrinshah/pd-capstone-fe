@@ -1,15 +1,18 @@
 [
     {
+        "id": 1,
         "name": "Pearl Milk Tea",
         "price": 5.30,
         "imageName": "fp-drink-gong-cha-pearl-milk-tea"
     },
     {
+        "id": 2,
         "name": "Earl Grey Milk Tea",
         "price": 7.30,
         "imageName": "fp-drink-gong-cha-pearl-milk-tea"
     },
     {
+        "id": 3,
         "name": "Mango Milk Tea",
         "price": 6.30,
         "imageName": "fp-drink-gong-cha-pearl-milk-tea"

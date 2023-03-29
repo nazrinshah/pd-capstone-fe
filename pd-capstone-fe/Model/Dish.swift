@@ -33,7 +33,11 @@ struct Dish: Hashable, Codable, Identifiable {
         imageName = "fp-drink-gong-cha-pearl-milk-tea"
     }
     
-    func toOrderItem() -> OrderItem {
-        return OrderItem()
+    func toOrderItem(quantity: Int, remarks: String) -> OrderItem {
+        return OrderItem(id: self.id!, name: self.name!, price: self.price!, quantity: quantity, remarks: remarks, imageName: self.imageName)
+    }
+    
+    func toSwimlaneItem() -> SwimlaneItem {
+        return SwimlaneItem(id: self.id!, name: self.name!, price: self.price!, imageName: self.imageName)
     }
 }

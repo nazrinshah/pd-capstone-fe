@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SwimlaneItem: Hashable, Codable {
+    var id: Int
     var name: String
     var price: Double
     
@@ -16,5 +17,12 @@ struct SwimlaneItem: Hashable, Codable {
     
     var image: Image {
         Image(imageName)
+    }
+    
+    init(id: Int, name: String, price: Double, imageName: String) {
+        self.id = id
+        self.name = name
+        self.price = price
+        self.imageName = imageName
     }
 }

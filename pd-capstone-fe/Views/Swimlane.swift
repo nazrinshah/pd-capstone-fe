@@ -9,13 +9,23 @@ import SwiftUI
 
 struct Swimlane: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var drinks = [Dish]()
     
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
-                ForEach(modelData.drinks, id: \.self) { drink in
-                    // insert navigation? no
-                    SwimlaneColumn(drink: drink)
+                ForEach(drinks) { drink in
+                    SwimlaneColumn(drink: drink.toSwimlaneItem())
+                }
+            }
+            .task {
+                do {
+                    let url = URL(string:"http://localhost:8080/drinks/1")!
+                    let (data, _) = try await URLSession.shared.data(from: url)
+                    drinks = try JSONDecoder().decode([Dish].self, from: data)
+                } catch {
+                    let _ = print("cannot get data")
+                    drinks = []
                 }
             }
         }

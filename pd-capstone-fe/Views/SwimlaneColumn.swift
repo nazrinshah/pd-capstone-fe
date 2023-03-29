@@ -26,7 +26,7 @@ struct SwimlaneColumn: View {
                             .lineLimit(1)
                     }
                     Spacer()
-                    NavigationLink(destination: AddToCart()) {
+                    NavigationLink(destination: AddToCart(dishId: drink.id)) {
                         Image(systemName: "plus")
                             .resizable()
                             .foregroundColor(.white)
