@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Order: View {
+struct Cart: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
@@ -19,22 +19,22 @@ struct Order: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     Divider()
-                    CartList()
+                    CartList(cart: modelData.order)
                     Spacer()
                     Banner()
                     Spacer()
                     Divider()
-                    Footer()
+                    Footer(cart: modelData.order)
                 }
                 HStack {
                     Text("Total")
                         .font(.headline)
                     Spacer()
-                    Text("$\(modelData.deliveryFee + modelData.platformFee + modelData.total, specifier: "%.2f")")
+                    Text("$\(modelData.deliveryFee + modelData.platformFee + modelData.subtotal, specifier: "%.2f")")
                         .font(.headline)
                 }
                 .task {
-                    modelData.total = modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)})
+                    modelData.subtotal = modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)})
                 }
                 .padding()
                 NavigationLink(destination: Checkout()) {
@@ -45,15 +45,15 @@ struct Order: View {
                         .frame(width: 340)
                         .background(Color.cerisered)
                         .cornerRadius(8)
+                    }
                 }
             }
         }
     }
     
-    struct Order_Previews: PreviewProvider {
+    struct Cart_Previews: PreviewProvider {
         static var previews: some View {
-            Order()
+            Cart()
                 .environmentObject(ModelData())
         }
     }
-}

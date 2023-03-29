@@ -9,10 +9,11 @@ import SwiftUI
 
 struct CartList: View {
     @EnvironmentObject var modelData: ModelData
+    var cart: [OrderItem]
     
     var body: some View {
         ScrollView {
-            ForEach(modelData.order) { item in
+            ForEach(cart) { item in
                 CartRow(orderItem: item)
                 Divider()
             }
@@ -22,7 +23,7 @@ struct CartList: View {
 
 struct CartList_Previews: PreviewProvider {
     static var previews: some View {
-        CartList()
+        CartList(cart: ModelData().order)
             .environmentObject(ModelData())
     }
 }

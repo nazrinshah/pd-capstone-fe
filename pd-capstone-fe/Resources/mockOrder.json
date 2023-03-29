@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "status": 0,
+    "items": [
+        {
+            "id": 10,
+            "name": "2 pcs Chicken Meal",
+            "price": 12.6,
+            "quantity": 2,
+            "remarks": "2 pcs Chicken, 3 pcs nugget",
+            "image_name": "fp-food-kfc-2pcs"
+        }
+    ],
+    "subtotal": 12,
+    "plaform_fee": 0,
+    "delivery_fee": 3
+}
