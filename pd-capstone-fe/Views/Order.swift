@@ -11,15 +11,32 @@ struct Order: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-            ScrollView {
+        NavigationView {
+            VStack {
                 Header()
-                CartList()
-                Divider()
-                Banner()
-                Spacer()
-                Divider()
-                Footer()
+                ScrollView {
+                    Image("fp-cart-page-rider")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Divider()
+                    CartList()
+                    Spacer()
+                    Banner()
+                    Spacer()
+                    Divider()
+                    Footer()
+                }
+                NavigationLink(destination: Checkout()) {
+                    Text("Make Payment")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 340)
+                        .background(Color.cerisered)
+                        .cornerRadius(8)
+                }
             }
+        }
     }
 }
 
