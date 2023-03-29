@@ -19,12 +19,12 @@ struct Cart: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     Divider()
-                    CartList()
+                    CartList(cart: modelData.order)
                     Spacer()
                     Banner()
                     Spacer()
                     Divider()
-                    Footer()
+                    Footer(cart: modelData.order)
                 }
                 HStack {
                     Text("Total")

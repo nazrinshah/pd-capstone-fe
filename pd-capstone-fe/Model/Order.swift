@@ -28,4 +28,12 @@ struct Order: Hashable, Codable {
         self.platformFee = platformFee
         self.deliveryFee = deliveryFee
     }
+    
+    init() {
+        self.id = 0
+        self.items = []
+        self.subtotal = 0
+        self.platformFee = 0
+        self.deliveryFee = 0
+    }
 }

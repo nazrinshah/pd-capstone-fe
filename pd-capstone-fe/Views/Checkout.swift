@@ -9,13 +9,27 @@ import SwiftUI
 
 struct Checkout: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var newOrder: Order = Order()
 
     var body: some View {
-        Text("hello")
-            .task {
-                let _ = print("asfhoiashfssahsa")
-                await placeOrder()
+        VStack {
+            VStack(alignment: .leading) {
+                Text("OrderId: \(newOrder.id!)")
             }
+            CartList(cart: newOrder.items!)
+            Footer(cart: newOrder.items!)
+            HStack {
+                Text("Total")
+                    .font(.headline)
+                Spacer()
+                Text("$\(newOrder.deliveryFee! + newOrder.platformFee! + newOrder.subtotal!, specifier: "%.2f")")
+                    .font(.headline)
+            }
+            .padding()
+        }
+        .task {
+            await placeOrder()
+        }
     }
     
     func placeOrder() async {
@@ -30,10 +44,11 @@ struct Checkout: View {
         request.httpMethod = "POST"
         
         do {
-            let (_, _) = try await URLSession.shared.upload(for: request, from: encoded)
-            
+            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            newOrder = try JSONDecoder().decode(Order.self, from: data)
         } catch {
             print("Checkout failed")
+            newOrder = load("mockOrder.json")
         }
     }
 

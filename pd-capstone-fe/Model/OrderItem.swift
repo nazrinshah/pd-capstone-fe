@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 struct OrderItem: Hashable, Codable, Identifiable {
+    enum CodingKeys: String, CodingKey {
+        case id, name, price, quantity, remarks
+        case imageName = "image_name"
+    }
+    
     var id: Int?
     var name: String? = ""
     var price: Double?

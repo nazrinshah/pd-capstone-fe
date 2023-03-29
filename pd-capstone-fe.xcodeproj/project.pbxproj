@@ -18,6 +18,7 @@
 		0CD04B0929D4AFC8007554E9 /* drinksApiMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD04B0829D4AFC8007554E9 /* drinksApiMock.json */; };
 		0CD04B0B29D4B58D007554E9 /* dishMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD04B0A29D4B58D007554E9 /* dishMock.json */; };
 		0CD04B0D29D4D1C2007554E9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD04B0C29D4D1C2007554E9 /* Order.swift */; };
+		0CD04B0F29D4DDC9007554E9 /* mockOrder.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD04B0E29D4DDC9007554E9 /* mockOrder.json */; };
 		0CF6819A29C8046600A51EEB /* pd_capstone_feApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF6819929C8046600A51EEB /* pd_capstone_feApp.swift */; };
 		0CF6819C29C8046600A51EEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF6819B29C8046600A51EEB /* ContentView.swift */; };
 		0CF6819E29C8046700A51EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF6819D29C8046700A51EEB /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		0CD04B0829D4AFC8007554E9 /* drinksApiMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drinksApiMock.json; sourceTree = "<group>"; };
 		0CD04B0A29D4B58D007554E9 /* dishMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dishMock.json; sourceTree = "<group>"; };
 		0CD04B0C29D4D1C2007554E9 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0CD04B0E29D4DDC9007554E9 /* mockOrder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockOrder.json; sourceTree = "<group>"; };
 		0CF6819629C8046600A51EEB /* pd-capstone-fe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pd-capstone-fe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF6819929C8046600A51EEB /* pd_capstone_feApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pd_capstone_feApp.swift; sourceTree = "<group>"; };
 		0CF6819B29C8046600A51EEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				0CF681C029C9220100A51EEB /* drinksData.json */,
 				0CD04B0829D4AFC8007554E9 /* drinksApiMock.json */,
 				0CD04B0A29D4B58D007554E9 /* dishMock.json */,
+				0CD04B0E29D4DDC9007554E9 /* mockOrder.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CF681C129C9220100A51EEB /* drinksData.json in Resources */,
+				0CD04B0F29D4DDC9007554E9 /* mockOrder.json in Resources */,
 				0CF681A129C8046700A51EEB /* Preview Assets.xcassets in Resources */,
 				0CF6819E29C8046700A51EEB /* Assets.xcassets in Resources */,
 				0CD04B0B29D4B58D007554E9 /* dishMock.json in Resources */,

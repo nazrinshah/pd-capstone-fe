@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Footer: View {
     @EnvironmentObject var modelData: ModelData
+    var cart: [OrderItem]
     
     var body: some View {
         VStack {
@@ -17,22 +18,21 @@ struct Footer: View {
                     Text("Subtotal")
                         .foregroundColor(.seriousgray)
                     Spacer()
-                    
-                    Text("$\(modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)}), specifier: "%.2f")")
+                    Text("$\(cart.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)}), specifier: "%.2f")")
                         .foregroundColor(.seriousgray)
                 }
                 HStack {
                     Text("Platform fee")
                         .foregroundColor(.seriousgray)
                     Spacer()
-                    Text("$0.40")
+                    Text("$\(modelData.platformFee, specifier: "%.2f")")
                         .foregroundColor(.seriousgray)
                 }
                 HStack {
                     Text("Delivery fee")
                         .foregroundColor(.seriousgray)
                     Spacer()
-                    Text("$3.00")
+                    Text("$\(modelData.deliveryFee, specifier: "%.2f")")
                         .foregroundColor(.seriousgray)
                 }
             }
@@ -43,7 +43,7 @@ struct Footer: View {
 
 struct Footer_Previews: PreviewProvider {
     static var previews: some View {
-        Footer()
+        Footer(cart: ModelData().order)
             .environmentObject(ModelData())
     }
 }
