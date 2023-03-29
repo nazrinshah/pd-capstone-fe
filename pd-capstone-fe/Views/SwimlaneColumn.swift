@@ -30,11 +30,11 @@ struct SwimlaneColumn: View {
                         Image(systemName: "plus")
                             .resizable()
                             .foregroundColor(.white)
-                            .background(.black)
+                            .background(Color("cerisered"))
                             .clipShape(Circle())
                             .frame(width: 25, height: 25)
                             .overlay {
-                                Circle().stroke(.black, lineWidth: 10)
+                                Circle().stroke(Color("cerisered"), lineWidth: 10)
                             }
                     }
                 }
