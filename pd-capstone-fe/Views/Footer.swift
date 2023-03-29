@@ -15,19 +15,25 @@ struct Footer: View {
             VStack {
                 HStack {
                     Text("Subtotal")
+                        .foregroundColor(.seriousgray)
                     Spacer()
                     
                     Text("$\(modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)}), specifier: "%.2f")")
+                        .foregroundColor(.seriousgray)
                 }
                 HStack {
                     Text("Platform fee")
+                        .foregroundColor(.seriousgray)
                     Spacer()
                     Text("$0.40")
+                        .foregroundColor(.seriousgray)
                 }
                 HStack {
                     Text("Delivery fee")
+                        .foregroundColor(.seriousgray)
                     Spacer()
                     Text("$3.00")
+                        .foregroundColor(.seriousgray)
                 }
             }
             .padding()

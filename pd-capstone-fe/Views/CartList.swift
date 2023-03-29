@@ -14,6 +14,7 @@ struct CartList: View {
         ScrollView {
             ForEach(modelData.order) { item in
                 CartRow(orderItem: item)
+                Divider()
             }
         }
     }

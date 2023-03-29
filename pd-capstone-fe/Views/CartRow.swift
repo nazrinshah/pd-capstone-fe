@@ -22,6 +22,7 @@ struct CartRow: View {
                 Text(orderItem.name!)
                     .font(.headline)
                     .lineLimit(1)
+                    .foregroundColor(.cerisered)
                 Text(orderItem.remarks!)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
@@ -29,6 +30,7 @@ struct CartRow: View {
             }
             Spacer()
             Text("$\(orderItem.price!*Float64(orderItem.quantity!), specifier: "%.2f")")
+                .foregroundColor(.seriousgray)
         }
         .frame(maxWidth: .infinity, maxHeight: 80)
         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))

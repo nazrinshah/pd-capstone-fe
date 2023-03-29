@@ -14,7 +14,6 @@ struct Order: View {
             ScrollView {
                 Header()
                 CartList()
-                Divider()
                 Banner()
                 Spacer()
                 Divider()

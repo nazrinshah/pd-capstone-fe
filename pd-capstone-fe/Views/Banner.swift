@@ -11,11 +11,12 @@ struct Banner: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Bubble Tea? Bubble Tea...")
-                .font(.title2)
-                .padding(.horizontal, 8)
+                .font(.headline)
+                .padding(.horizontal, 16)
             Text("(Beta) Complete your meal, no additional delivery charge")
                 .font(.subheadline)
-                .padding(.horizontal, 8)
+                .padding(.horizontal, 16)
+                .foregroundColor(.dustygray)
             Swimlane()
         }
     }
