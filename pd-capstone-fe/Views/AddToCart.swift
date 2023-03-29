@@ -53,7 +53,12 @@ struct AddToCart: View {
                 print(modelData.order)
                 self.presentationMode.wrappedValue.dismiss()
             }
-            .accentColor(Color("cerisered"))
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 340)
+            .background(Color.cerisered)
+            .cornerRadius(8)
             
         }
         .task {
