@@ -15,6 +15,10 @@ struct Order: View {
             VStack {
                 Header()
                 ScrollView {
+                    Image("fp-cart-page-rider")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Divider()
                     CartList()
                     Spacer()
                     Banner()
