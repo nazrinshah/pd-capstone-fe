@@ -3,27 +3,9 @@
         "id": 10,
         "name": "2 pcs Chicken Meal",
         "price": 12.60,
-        "quantity": 1,
+        "quantity": 2,
         "id": 1001,
         "remarks": "2 pcs Chicken, 3 pcs nugget",
-        "imageName": "fp-food-kfc-2pcs"
-    },
-    {
-        "id": 11,
-        "name": "asfasf",
-        "price": 12.60,
-        "quantity": 3,
-        "id": 1002,
-        "remarks": "2 pcs Chicken, 3 pcs nugget",
-        "imageName": "fp-food-kfc-2pcs"
-    },
-    {
-        "id": 12,
-        "name": "safasfggasfgasfsa",
-        "price": 12.60,
-        "quantity": 1,
-        "id": 1003,
-        "remarks": "asfsafasdfgdsvsvst",
         "imageName": "fp-food-kfc-2pcs"
     }
 ]

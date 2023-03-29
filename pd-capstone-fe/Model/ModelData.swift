@@ -11,6 +11,10 @@ import Combine
 final class ModelData: ObservableObject {
     @Published var order: [OrderItem] = load("orderData.json")
     @Published var drinks: [SwimlaneItem] = load("drinksData.json")
+    @Published var total: Float64 = 0.0
+    
+    let deliveryFee: Float64 = 3.0
+    let platformFee: Float64 = 0.4
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
