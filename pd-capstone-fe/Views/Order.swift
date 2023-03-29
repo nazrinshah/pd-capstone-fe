@@ -11,15 +11,19 @@ struct Order: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-            ScrollView {
+        NavigationView {
+            VStack {
                 Header()
-                CartList()
-                Spacer()
-                Banner()
-                Spacer()
-                Divider()
-                Footer()
+                ScrollView {
+                    CartList()
+                    Spacer()
+                    Banner()
+                    Spacer()
+                    Divider()
+                    Footer()
+                }
             }
+        }
     }
 }
 
