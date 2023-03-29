@@ -57,7 +57,7 @@ struct AddToCart: View {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 dish = try JSONDecoder().decode(Dish.self, from: data)
             } catch {
-                let _ = print("http://localhost:8080/dish")
+                let _ = print("cannot get dish")
                 dish = Dish()
             }
         }

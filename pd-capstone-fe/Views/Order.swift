@@ -20,6 +20,7 @@ struct Order: View {
                 Divider()
                 Footer()
             }
+        
     }
 }
 

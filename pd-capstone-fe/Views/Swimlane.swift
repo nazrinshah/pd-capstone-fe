@@ -24,7 +24,7 @@ struct Swimlane: View {
                     let (data, _) = try await URLSession.shared.data(from: url)
                     drinks = try JSONDecoder().decode([Dish].self, from: data)
                 } catch {
-                    let _ = print("cannot get data")
+                    let _ = print("cannot get drinks")
                     drinks = []
                 }
             }
