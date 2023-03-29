@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "vendor_id": 2,
+    "name": "Pearl Milk Tea",
+    "status": 1,
+    "price": 5.3,
+    "description": "Delicious boba with milk tea",
+    "currency": "SGD",
+    "image_name": "fp-drink-gong-cha-pearl-milk-tea"
+}

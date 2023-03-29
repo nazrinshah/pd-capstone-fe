@@ -27,6 +27,19 @@ struct AddToCart: View {
                         .resizable()
                         .scaledToFit()
                     VStack(alignment: .leading) {
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text(dish.name!)
+                                    .font(.title)
+                                Spacer()
+                                Text("$\(dish.price!, specifier: "%.2f")")
+                                    .font(.title2)
+                            }
+                            Text(dish.description!)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding()
                         VStack {
                             Text("Sugar Level")
                                 .font(.headline)
@@ -55,8 +68,8 @@ struct AddToCart: View {
                         let (data, _) = try await URLSession.shared.data(from: url)
                         dish = try JSONDecoder().decode(Dish.self, from: data)
                     } catch {
-                        let _ = print("http://localhost:8080/dish")
-                        dish = Dish()
+                        let _ = print("fallback to Dish mock")
+                        dish = load("dishMock.json")
                     }
                 }
                 Button("Add to Cart") {

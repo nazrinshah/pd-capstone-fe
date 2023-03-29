@@ -38,11 +38,11 @@ struct Order: View {
             }
         }
     }
-}
-
-struct Order_Previews: PreviewProvider {
-    static var previews: some View {
-        Order()
-            .environmentObject(ModelData())
+    
+    struct Order_Previews: PreviewProvider {
+        static var previews: some View {
+            Order()
+                .environmentObject(ModelData())
+        }
     }
 }

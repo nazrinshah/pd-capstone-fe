@@ -30,6 +30,9 @@ struct Dish: Hashable, Codable, Identifiable {
     }
     
     init() {
+        name = "testName"
+        price = 5.55
+        description = "lorem ipsum here"
         imageName = "fp-drink-gong-cha-pearl-milk-tea"
     }
     
@@ -38,6 +41,6 @@ struct Dish: Hashable, Codable, Identifiable {
     }
     
     func toSwimlaneItem() -> SwimlaneItem {
-        return SwimlaneItem(id: self.id!, name: self.name!, price: self.price!, imageName: self.imageName)
+        return SwimlaneItem(id: self.id!, name: self.name!, price: self.price!, description: self.description!, imageName: self.imageName)
     }
 }

@@ -26,7 +26,7 @@ struct CartRow: View {
                 Text(orderItem.remarks!)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                    .lineLimit(1)
+                    .lineLimit(2)
             }
             Spacer()
             Text("$\(orderItem.price!*Float64(orderItem.quantity!), specifier: "%.2f")")
