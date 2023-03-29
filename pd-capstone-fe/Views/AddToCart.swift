@@ -32,6 +32,7 @@ struct AddToCart: View {
                     
                     RadioGroupPicker(selectedIndex: $sugarLevel, titles: sugarLevels, itemSpacing: UIScreen.main.bounds.size.width-130, isButtonAfterTitle: true)
                         .fixedSize()
+                        .accentColor(Color("cerisered"))
                 }
                 
                 Divider()
@@ -42,6 +43,8 @@ struct AddToCart: View {
                     
                     RadioGroupPicker(selectedIndex: $iceLevel, titles: iceLevels, itemSpacing: UIScreen.main.bounds.size.width-110, isButtonAfterTitle: true)
                         .fixedSize()
+                        .accentColor(Color("cerisered"))
+                    
                 }
             }
 
@@ -50,6 +53,8 @@ struct AddToCart: View {
                 print(modelData.order)
                 self.presentationMode.wrappedValue.dismiss()
             }
+            .accentColor(Color("cerisered"))
+            
         }
         .task {
             do {

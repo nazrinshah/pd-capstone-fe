@@ -33,8 +33,9 @@ struct Footer: View {
             .padding()
             NavigationLink(destination: Checkout()) {
                 Text("Make Payment")
-            }
 
+            }
+            .accentColor(Color("cerisered"))
         }
     }
 }
