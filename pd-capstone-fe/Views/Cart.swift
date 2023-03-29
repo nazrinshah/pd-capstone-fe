@@ -45,6 +45,7 @@ struct Cart: View {
                         .frame(width: 340)
                         .background(Color.cerisered)
                         .cornerRadius(8)
+                    }
                 }
             }
         }
@@ -56,4 +57,3 @@ struct Cart: View {
                 .environmentObject(ModelData())
         }
     }
-}
