@@ -7,57 +7,41 @@
 
 import SwiftUI
 
-struct Vendor: Codable, Identifiable {
-    enum CodingKeys: String, CodingKey {
-        case id, name, status
-        case openingHours = "opening_hours"
-    }
-    
-    let id: Int
-    let name: String
-    let status: Int
-    let openingHours: String
-    
-    init() {
-        id = 1
-        name = ""
-        status = 0
-        openingHours = ""
-    }
-}
-
 struct Checkout: View {
-    @State private var vendors = [Vendor]()
-    @State private var vendor = Vendor()
-    
+    @EnvironmentObject var modelData: ModelData
+
     var body: some View {
-        VStack {
-            List(vendors) { vendor in
-                VStack(alignment: .leading) {
-                    Text(vendor.name)
-                        .font(.headline)
-                    Text("\(vendor.status)")
-                }
-            }
+        Text("hello")
             .task {
-                do {
-                    let url = URL(string: "http://localhost:8080/vendors")!
-                    let (data, _) = try await URLSession.shared.data(from: url)
-                    vendors = try JSONDecoder().decode([Vendor].self, from: data)
-                } catch {
-                    vendors = []
-                }
+                let _ = print("asfhoiashfssahsa")
+                await placeOrder()
             }
+    }
+    
+    func placeOrder() async {
+        guard let encoded = try? JSONEncoder().encode(Order(items: modelData.order, subtotal: modelData.subtotal, platformFee: modelData.platformFee, deliveryFee: modelData.deliveryFee)) else {
+            print("Failed to encode order")
+            return
+        }
+        
+        let url = URL(string: "http://localhost:8080/createorder")!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        
+        do {
+            let (_, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            
+        } catch {
+            print("Checkout failed")
         }
     }
+
 }
 
 struct Checkout_Previews: PreviewProvider {
     static var previews: some View {
         Checkout()
+            .environmentObject(ModelData())
     }
-}
-
-struct Joke: Codable {
-    let value: String
 }

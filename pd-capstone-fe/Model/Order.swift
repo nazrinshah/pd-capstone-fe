@@ -21,4 +21,11 @@ struct Order: Hashable, Codable {
     var subtotal: Float64?
     var platformFee: Float64?
     var deliveryFee: Float64?
+    
+    init(items: [OrderItem], subtotal: Float64, platformFee: Float64, deliveryFee: Float64) {
+        self.items = items
+        self.subtotal = subtotal
+        self.platformFee = platformFee
+        self.deliveryFee = deliveryFee
+    }
 }

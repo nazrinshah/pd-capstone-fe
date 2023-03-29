@@ -30,11 +30,11 @@ struct Cart: View {
                     Text("Total")
                         .font(.headline)
                     Spacer()
-                    Text("$\(modelData.deliveryFee + modelData.platformFee + modelData.total, specifier: "%.2f")")
+                    Text("$\(modelData.deliveryFee + modelData.platformFee + modelData.subtotal, specifier: "%.2f")")
                         .font(.headline)
                 }
                 .task {
-                    modelData.total = modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)})
+                    modelData.subtotal = modelData.order.reduce(0.0, {$0 + $1.price! * Float64($1.quantity!)})
                 }
                 .padding()
                 NavigationLink(destination: Checkout()) {
