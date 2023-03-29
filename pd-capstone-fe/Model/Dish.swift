@@ -30,6 +30,9 @@ struct Dish: Hashable, Codable, Identifiable {
     }
     
     init() {
+        name = "testName"
+        price = 5.55
+        description = "lorem ipsum here"
         imageName = "fp-drink-gong-cha-pearl-milk-tea"
     }
     

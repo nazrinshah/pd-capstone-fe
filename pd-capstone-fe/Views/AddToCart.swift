@@ -27,6 +27,19 @@ struct AddToCart: View {
                         .resizable()
                         .scaledToFit()
                     VStack(alignment: .leading) {
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text(dish.name!)
+                                    .font(.title)
+                                Spacer()
+                                Text("$\(dish.price!, specifier: "%.2f")")
+                                    .font(.title2)
+                            }
+                            Text(dish.description!)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding()
                         VStack {
                             Text("Sugar Level")
                                 .font(.headline)
